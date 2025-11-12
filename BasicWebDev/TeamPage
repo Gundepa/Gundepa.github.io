@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+
+    .nav {
+      background-color: #eee;
+      padding: 10px;
+      position: relative;
+    }
+
+    .nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .team-member {
+      overflow: auto;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .team-member img {
+      float: left;
+      width: 120px;
+      height: auto;
+      margin-right: 15px;
+    }
+
+    .bio {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="team-member">
+    <img src="images/member1.jpg" alt="Member 1">
+    <div class="bio">
+      <h3>Alex</h3>
+      <p>Creative lead who loves design and storytelling.</p>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <img src="images/member2.jpg" alt="Member 2">
+    <div class="bio">
+      <h3>Jordan</h3>
+      <p>Tech wizard who keeps our systems running smoothly.</p>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <img src="images/member3.jpg" alt="Member 3">
+    <div class="bio">
+      <h3>Riley</h3>
+      <p>Outreach coordinator who connects us with the community.</p>
+    </div>
+  </div>
+
+  <div class="team-member">
+    <img src="images/member4.jpg" alt="Member 4">
+    <div class="bio">
+      <h3>Sam</h3>
+      <p>Strategist who keeps our goals on track.</p>
+    </div>
+  </div>
+
+</body>
+</html>
