@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Project – Par</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "puzzle"
+        "footer";
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .puzzle {
+      grid-area: puzzle;
+    }
+
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <h1>Par Gunderson - Snowman Puzzle</h1>
+      <p>Completed on: November 19, 2025</p>
+    </header>
+
+    <section class="puzzle">
+      <h2>Flexbox Puzzle</h2>
+      <div class="flex-container">
+        <img src="images/piece1.jpg" alt="Puzzle piece 1">
+        <img src="images/piece2.jpg" alt="Puzzle piece 2">
+        <img src="images/piece3.jpg" alt="Puzzle piece 3">
+        <img src="images/piece4.jpg" alt="Puzzle piece 4">
+        <img src="images/piece5.jpg" alt="Puzzle piece 5">
+        <img src="images/piece5.jpg" alt="Puzzle piece 6">
+        <img src="images/piece5.jpg" alt="Puzzle piece 7">
+        <img src="images/piece5.jpg" alt="Puzzle piece 8">
+        <img src="images/piece5.jpg" alt="Puzzle piece 9">
+        <img src="images/piece5.jpg" alt="Puzzle piece 10">
+        <img src="images/piece5.jpg" alt="Puzzle piece 11">
+        <img src="images/piece5.jpg" alt="Puzzle piece 12">
+        <img src="images/faulty.jpg" alt="Faulty piece" class="hidden">
+      </div>
+    </section>
+  </div>
+</body>
+</html>
