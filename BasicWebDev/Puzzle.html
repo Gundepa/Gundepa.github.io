@@ -4,36 +4,43 @@
   <meta charset="UTF-8">
   <title>Puzzle Project – Par</title>
   <style>
-    .grid-container {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "puzzle"
-        "footer";
-      gap: 20px;
-      padding: 20px;
-    }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "puzzle"
+      "footer";
+    gap: 20px;
+    padding: 20px;
+  }
 
-    .header {
-      grid-area: header;
-    }
+  .header {
+    grid-area: header;
+  }
 
-    .puzzle {
-      grid-area: puzzle;
-    }
+  .puzzle {
+    grid-area: puzzle;
+  }
 
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 440px;
+    gap: 10px;
+  }
 
-    .flex-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
+  .flex-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
 
-    .hidden {
-      display: none;
-    }
-  </style>
+  .hidden {
+    display: none;
+  }
+</style>
 </head>
 <body>
   <div class="grid-container">
