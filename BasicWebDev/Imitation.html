@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Imitation Project</title>
+  <style>
+    body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #f0f4f8;
+}
+
+.oval-frame {
+  width: 80vw;
+  max-width: 500px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 50% / 40%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #e2e8f0;
+}
+    .field-wrapper {
+  padding: 1rem;
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 20px,
+    #e2e8f0 20px,
+    #e2e8f0 40px
+  );
+  border: 4px dashed #cbd5e0;
+}
+
+.tic-tac-border {
+  padding: 1rem;
+  background: #fff;
+  border: 2px solid #a0aec0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.tic-tac-border img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  object-fit: cover;
+}
+
+  </style>
+</head>
+<body>
+  <div class="oval-frame">
+    <img src="Images/Imitation/penguin.jpg" alt="Emperor penguin with chicks" />
+  </div>
+ <div class="field-wrapper">
+    <div class="tic-tac-border">
+      <img src="Images/Imitation/football_field.jpg" alt="Football field with Tic-Tac-Toe border" />
+    </div>
+ </div>
+</body>
+</html>
