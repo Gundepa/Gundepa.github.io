@@ -1,63 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Imitation Project</title>
-  <style>
-    body {
-  margin: 0;
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  background: #f0f4f8;
-}
+<html>
+  <head>
+    <title>The Imitation Project</title>
+    <style>
+      .penguin-frame {
+      border-radius: 50%;
+      overflow: hidden;
+      width: 500px;
+      height: 300px;
+      border: 3px solid black;
+    }
 
-.oval-frame {
-  width: 80vw;
-  max-width: 500px;
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-  border-radius: 50% / 40%;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border: 2px solid #e2e8f0;
-}
-    .field-wrapper {
-  padding: 1rem;
-  background: repeating-linear-gradient(
-    45deg,
-    #fff,
-    #fff 20px,
-    #e2e8f0 20px,
-    #e2e8f0 40px
-  );
-  border: 4px dashed #cbd5e0;
-}
+    .penguin-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: sepia(0.3) contrast(0.85) brightness(1.05);
+    }
+    .field-container {
+      width: 600px;
+      height: 400px;
+      filter: grayscale(100%);
+      border-width: 40px;
+      border-style: solid;
+      border-image-source: url('Images/Imitation/tic-tac-toe.png'); /* Replace with your border image */
+      border-image-slice: 50;
+      border-image-repeat: round;
+      box-sizing: border-box;
+    }
 
-.tic-tac-border {
-  padding: 1rem;
-  background: #fff;
-  border: 2px solid #a0aec0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
+    .field-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .dino img {
+      width: 400px;
+      height: auto;
+      filter: hue-rotate(100deg) saturate(1.5) brightness(1.1) drop-shadow(8px 8px 8px rgba(0,0,0,1));
+    }
+    .seagull-wrapper {
+      display: inline-block;
+      padding: 20px;
+      background: linear-gradient(135deg, #5E47FF, #ffffff);
+      box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6);
+    }
 
-.tic-tac-border img {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  object-fit: cover;
-}
+    .seagull-wrapper img {
+      width: 500px;
+      height: auto;
+      filter: contrast(1.6) brightness(1.2)
+    }
+    .butterfly-wrapper {
+      display: inline-block;
+      padding: 20px;
+    }
 
-  </style>
-</head>
-<body>
-  <div class="oval-frame">
-    <img src="Images/Imitation/penguin.jpg" alt="Emperor penguin with chicks" />
+    .butterfly-wrapper img {
+      width: 500px;
+      height: auto;
+      filter: invert(100%) 
+    }
+    .stage-frame {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 30px;
+    }
+
+    .stage-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(4px) brightness(0.8);
+    }
+
+    .stage-frame .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+      font-family: sans-serif;
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>The Imitation Project</h1>
+      <div class="penguin-frame">
+    <img src="Images/Imitation/penguins.jpg" alt="Emperor penguins with chicks">
   </div>
- <div class="field-wrapper">
-    <div class="tic-tac-border">
-      <img src="Images/Imitation/football_field.jpg" alt="Football field with Tic-Tac-Toe border" />
-    </div>
- </div>
-</body>
+  <p></p>
+ <div class="field-container">
+    <img src="Images/Imitation/football_fieldjpg" alt="Stylized football field">
+  </div>
+  <p></p>
+<div class="dino">
+    <img src="Images/Imitation/dinosaur.png" alt="Cartoon Dinosaur">
+  </div>
+  <p></p>
+  <div class="seagull-wrapper">
+    <img src="Images/Imitation/seagull.png" alt="Seagull in flight">
+  </div>
+<div class="butterfly-wrapper">
+    <img src="Images/Imitation/butterflyjpg" alt="Blue butterfly with floral background">
+  </div>
+<p></p>
+  <div class="stage-frame">
+    <img src="Images/Imitation/theater_stage.jpg" alt="Theatrical stage with spotlight">
+    <div class="text-overlay">Presenting</div>
+  </div>
+
+  </body>
 </html>
