@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Crescendo Violin Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header fade-in">
+    <h1>Crescendo Violin Shop</h1>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="instruments.html">Instruments</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" name="service">
+          <option>Instrument Purchase</option>
+          <option>Repairs</option>
+          <option>Rentals</option>
+          <option>Lessons</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+    <p>Visit us at our shop:  
+      <a href="https://maps.google.com" target="_blank" rel="noopener">
+        View Crescendo Violin Shop on Google Maps
+      </a>
+    </p>
+  </main>
+
+  <footer class="site-footer fade-in">
+    <p>&copy; 2026 Crescendo Violin Shop</p>
+  </footer>
+</body>
+</html>
